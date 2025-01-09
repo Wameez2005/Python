@@ -1,0 +1,83 @@
+a) Source Code - Demonstrate a python code to print try, except and finally block
+statements
+#The finally block gets executed no matter if the try block raises any errors or not:
+try:
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("orange")
+except:
+ print("Something went wrong")
+finally:
+ print("The 'try except' is finished")
+ print(thislist)
+
+
+b) Source Code - Write a python program to open and write “hello world” into a file and check the access permissions to that file?
+ #Create a new file
+f = open("PPLab.txt", "w")
+#Write to an Existing File
+#Open the file “PPLab.txt", and append content to the file:
+f = open("PPLab.txt", "a")
+f.write("Hello World ! the file has more content!")
+f.close()
+#open and read the file after the appending:
+f = open("PPLab.txt", "r")
+print(f.read())
+f = open("PPLab.txt", "r")
+#stores all the data of the file into the variable content
+content = f.read(4)
+# prints the type of the data stored in the file
+print(type(content))
+#prints the content of the file
+print(content)
+# Close file
+f = open("PPLab.txt ", "r")
+print(f.readline())
+f.close()
+#x: it creates a new file with the specified name. It causes an error a file exists with the same
+name.
+f1 = open("PPLab.txt","x")
+print(f1)
+if f1:
+ print("File created successfully") 
+
+
+c) Source Code - Python program to sort the elements of an array in ascending order and
+Descending order
+ #Initialize array
+arr = [5, 2, 8, 7, 1]
+temp = 0;
+
+#Displaying elements of original array
+print("Elements of original array: ")
+for i in range(0, len(arr)):
+ print(arr[i],end = "")
+
+#Sort the array in ascending order
+for i in range(0, len(arr)):
+ for j in range(i+1, len(arr)):
+ if(arr[i] > arr[j]):
+ temp = arr[i]
+ arr[i] = arr[j]
+ arr[j] = temp
+
+print()
+
+#Displaying elements of the array after sorting
+
+print("Elements of array sorted in ascending order: ")
+for i in range(0, len(arr)):
+ print(arr[i])
+print("________________******************_________________")
+#Sort the array in descending order
+ for i in range(0, len(arr)):
+ for j in range(i+1, len(arr)):
+ if(arr[i] < arr[j]):
+ temp = arr[i]
+ arr[i] = arr[j]
+ arr[j] = temp
+print()
+#Displaying elements of array after sorting
+print("Elements of array sorted in descending order: ")
+for i in range(0, len(arr)):
+ print(arr[i]) 
+

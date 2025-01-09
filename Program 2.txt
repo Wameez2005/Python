@@ -1,0 +1,46 @@
+a) Source Code: Python Program to Check if a Number is Positive, Negative or 0 Using
+if...elif...else
+# Input from the user
+number = float(input("Enter a number: "))
+
+# Check if the number is positive, negative, or zero
+if number > 0:
+    print(f"The number {number} is positive.")
+elif number < 0:
+    print(f"The number {number} is negative.")
+else:
+    print(f"The number is zero.")
+
+
+b) Source Code: Write a python program to find largest of three numbers using the logical
+operator
+# Input from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Determine the largest number
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+# Display the result
+print(f"The largest number among {num1}, {num2}, and {num3} is {largest}.")
+
+
+
+c) Source Code - Python program to swap two variables
+# Input from the user
+a = input("Enter the first variable (a): ")
+b = input("Enter the second variable (b): ")
+
+# Swapping using a temporary variable
+temp = a
+a = b
+b = temp
+
+# Display the result
+print(f"After swapping: a = {a}, b = {b}")

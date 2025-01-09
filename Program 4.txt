@@ -1,0 +1,45 @@
+a.) Source code - concept of inheritance
+#Inheritance Concept using the Quadrilateral
+class quadriLateral:
+def __init__(self, a, b, c, d):
+self.side1=a
+self.side2=b
+self.side3=c
+self.side4=d
+def perimeter(self):
+ p=self.side1 + self.side2 + self.side3 + self.side4
+ print("perimeter=",p)
+q1=quadriLateral(7,5,6,4)
+q1.perimeter()
+class rectangle(quadriLateral):
+def __init__(self, a, b):
+super().__init__(a, b, a, b)
+r1=rectangle(10, 20)
+r1.perimeter()
+
+
+b.) Source code - polymorphism using method overriding
+#The following program demonstrates method overriding in action:
+class A:
+def explore(self):
+ print("explore() method from class A")
+class B(A):
+def explore(self):
+ print("explore() method from class B")
+b_obj =B()
+a_obj =A()
+b_obj.explore()
+a_obj.explore()
+
+
+
+c.) Source code - call data member and function using classes and objects
+class Person:
+ def __init__(self, name, age):
+ self.name = name
+ self.age = age
+ def myfunc(self):
+ print("Hello my name is " + self.name)
+p1 = Person("John", 36)
+p1.myfunc()
+print(p1.age)

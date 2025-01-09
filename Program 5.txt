@@ -1,0 +1,71 @@
+a) Source Code - Write a program to create, append, and remove lists in python.
+print("Create a list")
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+print("Add an item at a specified index")
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+print("Get the length of a list")
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+print("Add an item to the end of the a list")
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+print("Remove an item")
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+print("Remove the last item")
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)
+print("Remove an item at a specified index")
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+print("Empty list")
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+
+b) Source Code - Creating Python Dictionary, accesing items , use get() method , change
+values & Len()
+print("1.Create and print a dictionary:")
+thisdict = {
+ "brand": "Ford",
+ "model": "Mustang",
+ "year": 1964
+}
+print(thisdict)
+print("2. Accessing Items:”)
+# Get the value of the "model" key:
+thisdict = {
+ "brand": "Ford",
+ "model": "Mustang",
+ "year": 1964
+}
+x = thisdict["model"]
+print("3. Using get() Method:")
+#There is also a method called get() that will give you the same result:
+print("Get the value of the model key:")
+x = thisdict.get("model")
+print("4. Change values:")
+#Change the "year" to 2022:
+thisdict = {
+ "brand": "Ford",
+ "model": "Mustang",
+ "year": 1964
+}
+thisdict["year"] = 2022
+print("5.Print the number of items in the dictionary:")
+print(len(thisdict))
+print("empty dictionary")
+mydict = {}
+
+
+
+
+

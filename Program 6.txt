@@ -1,0 +1,55 @@
+a) Source Code – Write a program to show the use of lambda functions
+#Use lambda functions when an anonymous function is required for a short period of
+time.
+double = lambda x: x * 2
+print(double(5))
+#Lambda functions can take any number of arguments: Addition argument a with
+argument b and return the result:
+x = lambda a, b : a + b
+print(x(5, 6))
+
+
+b) Source Code – Write a program to filter out only the even items from a list using
+Lamda function
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+new_list = list(filter(lambda x: (x%2 == 0) , my_list))
+print(new_list)
+
+
+c)Source Code – Write a Program to make a simple calculator using functions
+# This function adds two numbers
+def add(x, y):
+ return x + y
+# This function subtracts two numbers
+def subtract(x, y):
+ return x - y
+# This function multiplies two numbers
+def multiply(x, y):
+ return x * y
+# This function divides two numbers
+def divide(x, y):
+ return x / y
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+while True:
+ # Take input from the user
+ choice = input("Enter choice(1/2/3/4): ")
+ # Check if choice is one of the four options
+ if choice in ('1', '2', '3', '4'):
+ num1 = float(input("Enter first number: "))
+ num2 = float(input("Enter second number: "))
+ if choice == '1':
+ print(num1, "+", num2, "=", add(num1, num2))
+ elif choice == '2':
+ print(num1, "-", num2, "=", subtract(num1, num2))
+ elif choice == '3':
+ print(num1, "*", num2, "=", multiply(num1, num2))
+ elif choice == '4':
+ print(num1, "/", num2, "=", divide(num1, num2))
+ break
+else:
+ print("Invalid Input")
+

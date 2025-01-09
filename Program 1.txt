@@ -1,0 +1,65 @@
+a.) Source Code - Variable
+    x = 5
+    y = "John"
+    z = 10.5
+    print(x)
+    print(y)
+    print(z)
+
+
+Source Code - Executing Python from the Command Line
+Step 1 Go to Start Type Python Command Line
+Step 2 Write print(“ Hello World!”)
+Step 3 Enter
+
+
+Source Code – Editing Python Files
+f= open("guru99.txt","w+")
+for i in range(10):
+f.write("This is line %d\r\n" % (i+1))
+f.close()
+
+
+b.) Write a python program to add two numbers.
+# Function to add two numbers
+def add_numbers(num1, num2):
+    return num1 + num2
+
+# Input from the user
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+
+# Calculate the sum
+result = add_numbers(number1, number2)
+
+# Display the result
+print(f"The sum of {number1} and {number2} is {result}.")
+
+
+c.) Write a program to demonstrate different number data types in python.
+#Text Type
+#String
+x = "Hello World"
+#display x:
+print(x)
+#display the data type of x:
+print(type(x))
+#Numeric Types
+#Int
+x = 20
+#display x:
+print(x)
+#display the data type of x:
+print(type(x))
+#Float
+x = 20.5
+#display x:
+print(x)
+#display the data type of x:
+print(type(x))
+#complex
+x = 1j
+#display x:
+print(x)
+#display the data type of x:
+print(type(x))

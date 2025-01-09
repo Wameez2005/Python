@@ -1,0 +1,38 @@
+a) Source Code - python program to check whether the given string is palindrome or not.
+def is_palindrome(string):
+    # Remove any spaces and convert to lowercase for uniform comparison
+    processed_string = ''.join(string.lower().split())
+    
+    # Check if the string is equal to its reverse
+    return processed_string == processed_string[::-1]
+
+# Input from the user
+user_input = input("Enter a string to check if it is a palindrome: ")
+
+# Check and display the result
+if is_palindrome(user_input):
+    print(f'"{user_input}" is a palindrome.')
+else:
+    print(f'"{user_input}" is not a palindrome.')
+
+
+
+b) Source code - Write a program to create, concatenate and print a string and accessing substring from a given string.
+# Creating strings
+string1 = "Hello"
+string2 = "World"
+
+# Concatenating strings
+concatenated_string = string1 + " " + string2
+print("Concatenated String:", concatenated_string)
+
+# Accessing a substring from a given string
+start_index = 0
+end_index = 5
+substring = concatenated_string[start_index:end_index]
+print(f"Substring from index {start_index} to {end_index}:", substring)
+
+# Demonstrating other substring examples
+print("First 5 characters:", concatenated_string[:5])
+print("Last 5 characters:", concatenated_string[-5:])
+
